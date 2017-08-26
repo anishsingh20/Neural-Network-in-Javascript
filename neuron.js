@@ -6,3 +6,7 @@ const { Layer , Network } = window.synaptic;
 var inputLayer = new Layer(2) ; //2 input units
 var hiddenLayer = new Layer(4); //4 hidden neurons
 var outputLayer = new Layer(1); //1 output neurons
+
+//creating connections and projections
+inputLayer.project(hiddenLayer);
+hiddenLayer.project(outputLayer);
